@@ -1,11 +1,22 @@
 #map-canvas {
-  float: left;
-  width: 50vw;
-  height: 50vw;
+  float:left;
+  width: 48vw;
+  height: 48vw;
 }
 
 #list{
-  float: right;
-  width: 40vw;
+  border: 1px solid #000000;
 
+}
+
+#text{
+}
+
+h3{
+  border-bottom: 1px solid #000000;
+}
+
+#contents{
+  float:right;
+  width: 48vw;
 }
