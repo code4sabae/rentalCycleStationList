@@ -1,0 +1,11 @@
+#map-canvas {
+  float: left;
+  width: 50vw;
+  height: 50vw;
+}
+
+#list{
+  float: right;
+  width: 40vw;
+
+}
