@@ -93,7 +93,10 @@ UNION
       google.maps.event.addListener(marker, "click", function (e) {
         text.innerHTML = this.item.label.value;
         if (this.item.type.value == rentalCycleStation) {
-          text.innerHTML += "<p>近くの観光地リスト</p><p>" + this.item.neighbor + "</p >";
+          text.innerHTML += "<div id='displayLabel'><p>近くの観光地リスト</p></div>" + this.marker.item.neighbor;
+          if (this.marker.item.neighbor.length == 0) {
+            text.innerHTML += "近くの観光地データはありません";
+          }
         }
         map.panTo(this.getPosition());
       });
@@ -111,6 +114,9 @@ UNION
           text.innerHTML = "<div id='displayLabel'>レンタルサイクルステーション名 </div>" + this.marker.item.label.value;
           if (this.marker.item.type.value == rentalCycleStation) {
             text.innerHTML += "<div id='displayLabel'><p>近くの観光地リスト</p></div>" + this.marker.item.neighbor;
+            if (this.marker.item.neighbor.length == 0) {
+              text.innerHTML += "近くの観光地データはありません";
+            }
           }
         };
         list.appendChild(li);
