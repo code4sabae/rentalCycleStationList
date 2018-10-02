@@ -108,9 +108,9 @@ UNION
         li.onclick = function () {
           map.setZoom(13);
           map.panTo(this.marker.getPosition());
-          text.innerHTML = this.marker.item.label.value;
+          text.innerHTML = "<div id='displayLabel'>レンタルサイクルステーション名 </div>" + this.marker.item.label.value;
           if (this.marker.item.type.value == rentalCycleStation) {
-            text.innerHTML += "<p>近くの観光地リスト</p><p>" + this.marker.item.neighbor + "</p >";
+            text.innerHTML += "<div id='displayLabel'><p>近くの観光地リスト</p></div>" + this.marker.item.neighbor;
           }
         };
         list.appendChild(li);

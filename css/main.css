@@ -6,12 +6,7 @@
 
 #list{
   border: 1px solid #000000;
-
 }
-
-#text{
-}
-
 h3{
   border-bottom: 1px solid #000000;
 }
@@ -19,4 +14,8 @@ h3{
 #contents{
   float:right;
   width: 48vw;
+  height: 100vh;
+}
+#displayLabel{
+  font-size: 23px;
 }
