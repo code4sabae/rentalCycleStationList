@@ -93,8 +93,8 @@ UNION
       google.maps.event.addListener(marker, "click", function (e) {
         text.innerHTML = this.item.label.value;
         if (this.item.type.value == rentalCycleStation) {
-          text.innerHTML += "<div id='displayLabel'><p>近くの観光地リスト</p></div>" + this.marker.item.neighbor;
-          if (this.marker.item.neighbor.length == 0) {
+          text.innerHTML += "<div id='displayLabel'><p>近くの観光地リスト</p></div>" + this.item.neighbor;
+          if (this.item.neighbor.length == 0) {
             text.innerHTML += "近くの観光地データはありません";
           }
         }
